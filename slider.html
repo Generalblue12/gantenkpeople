@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="image1.jpg" alt="Gambar 1"></div>
+      <div class="swiper-slide"><img src="image2.jpg" alt="Gambar 2"></div>
+      <div class="swiper-slide"><img src="image3.jpg" alt="Gambar 3"></div>
+    </div>
+    <!-- Tombol navigasi -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Indikator -->
+    <div class="swiper-pagination"></div>
+  </div>
+  
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+  
